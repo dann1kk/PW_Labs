@@ -66,7 +66,7 @@ def search(term):
             if len(results) >= 10:
                 break
             print("%d. " % int(len(results) + 1), end='')
-            link = elem.find("a")["href"].replace('/url?q=', '')
+            link = elem.find("a")["href"].replace('/url?q=', '').split('&')[0]
             title = elem.find("h3").get_text()
             print(title)
             print("Link:", link, end='\n\n')
