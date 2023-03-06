@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import sys
 import sqlite3
 import re
+import webbrowser
 
 CACHE_DB = "cache.db"
 
@@ -71,6 +72,21 @@ def search(term):
             print("Link:", link, end='\n\n')
             results.append((title, link))
         start_index += 10
+
+        # open the link
+    answer = input("Would you like to open one of the links? (y/n): ")
+    while answer.lower() == "y":
+        selection = input("Please select a number between 1 and 10 to open the corresponding link (or enter 'q' to quit): ")
+        if selection.lower() == "q":
+            break
+        elif not selection.isdigit() or int(selection) < 1 or int(selection) > 10:
+            print("Invalid selection. Please enter a number between 1 and 10.")
+            continue
+        else:
+            link = results[int(selection) - 1][1]
+            webbrowser.open(link)
+            break
+    print("Goodbye!")
 
 
 def access(url):
