@@ -1,4 +1,3 @@
-## **NOT FINISHED YET, BASIC TASKS DONE, EXTRA POINTS LEFT*
 # Lab 2 - HTTP, caching and content negotiation
 
 ## Story
