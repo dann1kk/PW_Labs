@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Pogorevici, FAF-202</title> <!-- CHANGE THESE VALUES -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <canvas id="canvas2"></canvas>
+    <div id="notification-container"></div>
+    <div id="mainContainer">
+      <div id="inputContainer">
+        <h3>To Do List</h3>
+        <form>
+          <label>
+            <input type="text" id="input" maxlength="20" placeholder="Enter a task...">
+            <button id="submitButton" type="submit">Add</button>
+          </label>
+        </form>
+      </div>
+      <div id="cardsContainer">
+        <ul id="todo-list">
+        </ul>
+      </div>
+    </div>
+    <select class="select">
+      <option>All</option>
+      <option>Checked</option>
+      <option>Non Checked</option>
+    </select>
+  </body>
+</html>
