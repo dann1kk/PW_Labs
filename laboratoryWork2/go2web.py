@@ -84,7 +84,7 @@ def search(term):
             continue
         else:
             link = results[int(selection) - 1][1]
-            webbrowser.open(link)
+            access(link)
             break
     print("Goodbye!")
 
