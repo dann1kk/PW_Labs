@@ -39,8 +39,7 @@ function ShowQuestions(props) {
         postData,
         {
           headers: {
-            "X-Access-Token":
-              "14c1e03395d88c4f3a394eec7f5993345f792814e4ebce7f4e316996b10fa8bd",
+            "X-Access-Token": process.env.REACT_APP_ACCESS_TOKEN,
           },
         }
       );
