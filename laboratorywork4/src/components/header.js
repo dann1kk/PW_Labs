@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import Music from './music';
 
 function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('user-info'));
@@ -29,6 +30,7 @@ function Header() {
 
   return (
     <div className="header">
+      <Music />
       {isLoggedIn ? (
         <>
           <NavLink className="nav-link" to="/main">

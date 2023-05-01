@@ -184,3 +184,14 @@ input[type=radio]{
   color: rgb(50, 95, 109);
 }
 
+.music {
+  color: rgb(255, 250, 250);
+  background-color: transparent;
+  height: auto;
+  width: auto;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  border: none; 
+}
+
